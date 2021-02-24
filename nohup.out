@@ -1,0 +1,42 @@
+Traceback (most recent call last):
+  File "app.py", line 1, in <module>
+    from flask import Flask
+  File "/home/pi/flask/project/env/lib/python3.7/site-packages/flask/__init__.py", line 16, in <module>
+    from werkzeug.exceptions import abort
+  File "/home/pi/flask/project/env/lib/python3.7/site-packages/werkzeug/__init__.py", line 16, in <module>
+    from .test import Client
+  File "/home/pi/flask/project/env/lib/python3.7/site-packages/werkzeug/test.py", line 45, in <module>
+    from .wrappers import BaseRequest
+  File "/home/pi/flask/project/env/lib/python3.7/site-packages/werkzeug/wrappers/__init__.py", line 30, in <module>
+    from .request import PlainRequest
+  File "/home/pi/flask/project/env/lib/python3.7/site-packages/werkzeug/wrappers/request.py", line 7, in <module>
+    from .user_agent import UserAgentMixin
+  File "/home/pi/flask/project/env/lib/python3.7/site-packages/werkzeug/wrappers/user_agent.py", line 1, in <module>
+    from ..useragents import UserAgent
+  File "/home/pi/flask/project/env/lib/python3.7/site-packages/werkzeug/useragents.py", line 104, in <module>
+    class UserAgent(object):
+  File "/home/pi/flask/project/env/lib/python3.7/site-packages/werkzeug/useragents.py", line 180, in UserAgent
+    _parser = UserAgentParser()
+  File "/home/pi/flask/project/env/lib/python3.7/site-packages/werkzeug/useragents.py", line 79, in __init__
+    for a, b in self.browsers
+  File "/home/pi/flask/project/env/lib/python3.7/site-packages/werkzeug/useragents.py", line 79, in <listcomp>
+    for a, b in self.browsers
+  File "/usr/lib/python3.7/re.py", line 234, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.7/re.py", line 286, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.7/sre_compile.py", line 768, in compile
+    code = _code(p, flags)
+  File "/usr/lib/python3.7/sre_compile.py", line 607, in _code
+    _compile(code, p.data, flags)
+  File "/usr/lib/python3.7/sre_compile.py", line 156, in _compile
+    _compile(code, av[2], flags)
+  File "/usr/lib/python3.7/sre_compile.py", line 168, in _compile
+    _compile(code, p, _combine_flags(flags, add_flags, del_flags))
+  File "/usr/lib/python3.7/sre_compile.py", line 148, in _compile
+    _compile(code, av[2], flags)
+  File "/usr/lib/python3.7/sre_compile.py", line 120, in _compile
+    charset, hascased = _optimize_charset(av, iscased, tolower, fixes)
+  File "/usr/lib/python3.7/sre_compile.py", line 396, in _optimize_charset
+    if chunk in comps:
+KeyboardInterrupt
