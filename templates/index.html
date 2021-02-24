@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Wiadomości</title>
+</head>
+<body>
+<div id="wiadomości">
+</div>
+<h2 id="in-progress" hidden>...</h2>
+<div id="input-form">
+<input type="text"  id="pole" oninput="showInProgress()">
+<button id="wyslij" onclick="sendMessage()"> Wyślij</button>
+</div>
+<script>
+  function showInProgress() {
+    document.getElementById('in-progress').hidden = false;
+  }
+
+  function cleanInput() {
+    document.getElementById('pole').value = '';
+  }
+
+  function sendMessage() {
+    const newMessage = document.createElement('h2');
+    newMessage.innerText = document.getElementById('pole').value;
+    document.getElementById('wiadomości').appendChild(newMessage);
+    cleanInput();
+    document.getElementById('in-progress').hidden = true;
+  }
+</script>
+</body>
+</html>
